@@ -22,9 +22,15 @@ class App extends Component {
   }
 
   render() {
+    const thingsList = this.state.things.map((thing)=>{
+      return <li>There are {thing.number} {thing.name}s</li>
+    })
     return (
       <div className="App">
         <h1>Things!</h1>
+        <ul>
+          {thingsList}
+        </ul>
       </div>
     );
   }
