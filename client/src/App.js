@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    fetch("https://localhost:3001/api/v1/things")
+    fetch("https://powerful-fortress-93651.herokuapp.com/api/v1/things")
       .then(response => {
         return response.json()})
       .then(things=>{
