@@ -15,7 +15,9 @@ class App extends Component {
       .then(response => {
         return response.json()})
       .then(things=>{
-        console.log(things)
+        this.setState({
+          things: things
+        })
       })
   }
 
