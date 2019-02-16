@@ -11,7 +11,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    fetch("http://localhost:3001/api/v1/things")
+    fetch("https://localhost:3001/api/v1/things")
       .then(response => {
         return response.json()})
       .then(things=>{
