@@ -23,7 +23,7 @@ class App extends Component {
 
   render() {
     const thingsList = this.state.things.map((thing)=>{
-      return <li>There are {thing.number} {thing.name}s</li>
+      return <li key={thing.id}>There are {thing.number} {thing.name}s</li>
     })
     return (
       <div className="App">
